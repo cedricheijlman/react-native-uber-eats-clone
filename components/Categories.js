@@ -43,9 +43,10 @@ export default function Categories() {
   return (
     <View style={{ backgroundColor: "white", marginTop: 5 }}>
       <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-        {items.map((item) => {
+        {items.map((item, index) => {
           return (
             <View
+              key={index}
               style={{
                 alignItems: "center",
                 marginHorizontal: 10,
